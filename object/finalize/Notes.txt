@@ -1,0 +1,2 @@
+Just before destroying an object, garbage collector calls finalize() method to perform clean up activities,
+once finalize method is completed, Garbage collector destroys the object

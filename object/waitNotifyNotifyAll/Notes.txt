@@ -1,0 +1,7 @@
+We can use Wait(). notify(). notifyAll() methods for inter thread communications
+
+The thread which is expecting update, it is responsible to call wait() method, then immediately, the thread will enter into waiting state
+
+The thread which is responsible to perform update, after performing update, the thread can call notify,
+
+The waiting thread will get notification and it will continue it s execution with those updates

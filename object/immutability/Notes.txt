@@ -1,0 +1,24 @@
+Once We create an object, we can't perform any changes in that object,
+
+If we are trying to perform any change and if there is any change in the content, so with those changes, a new object will be created.
+
+If there is no change in the content, existing object will be reused , this behaviour  is nothing but immutability
+
+
+We can create our own immutable class
+
+final vs immutability
+
+final is applicable for variable but not for objects whereas immutability applicable for object but not for variable
+
+By declaring a reference variable as final , we won't get any immutability nature
+
+Even though, reference eis the final, we can perform any type of change in the corresponding object, but we can not perform reassignmnet for the valuable
+
+hence final and immutable both are different concept
+
+final StringBuffer sb = new StringBuffer("akash");
+sb.append("keshari");
+System.out.println(sb);//akashkeshari
+
+ // sb = new StringBuffer("lucky");//can not assign a value to a final variable
