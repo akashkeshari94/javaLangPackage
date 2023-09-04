@@ -1,0 +1,9 @@
+If the content is fixed and won't change frequently, then it is recommended to go for String
+
+If content is not fixed snd keep on changing , then it is not recommended to use String, Because for
+ every change , a new object will be recreated which affects the performance of the system
+
+To handle this requirement , we should go for StringBuffer
+
+The main advantage of StringBuffer over String is that all required change will be performed in the existing
+ object only.
