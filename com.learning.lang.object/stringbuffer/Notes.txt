@@ -28,4 +28,23 @@ public StringBuffer append(String s)
                           (long l)
                           (char ch)
                           (boolean b)
-similar overloaded methods available
+similar overloaded methods available for insert
+public StringBuffer insert(int index,"abc")
+
+
+public StringBuffer delete(int begin,int end)
+To delete characters located from begin index to end-1
+
+public StringBuffer deleteCharAt(int index)
+To delete characters located at specified index
+
+public StringBuffer reverse()
+
+public void setLength(int length)
+
+public void ensureCapacity(int capacity)
+to increase capacity on fly based on our requirement
+
+public int trimToSize()
+
+

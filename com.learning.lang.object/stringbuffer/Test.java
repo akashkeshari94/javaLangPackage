@@ -28,6 +28,42 @@ public class Test {
         sb4.append(true);
         System.out.println(sb4);
 
+        StringBuffer sb5 = new StringBuffer("Akash");
+        sb5.insert(2,"luck");
+        System.out.println(sb5);//Akluckash
+
+        StringBuffer sb6 = new StringBuffer("Akash");
+        System.out.println(sb6.deleteCharAt(2));//Aksh
+
+        StringBuffer sb7 = new StringBuffer("Akash");
+        System.out.println(sb7.delete(2,4));//Akh
+
+
+        StringBuffer sb8 = new StringBuffer("Akash");
+        System.out.println(sb8.reverse());//hsakA
+
+        StringBuffer sb9 = new StringBuffer("AkashKeshari");
+        sb9.setLength(6);
+        System.out.println(sb9);//AkashK
+
+        StringBuffer sb10 = new StringBuffer();//initail capacity 16
+        sb10.ensureCapacity(1000);
+        System.out.println(sb10.capacity());//1000
+
+        StringBuffer sb11 = new StringBuffer(1000);//initail capacity 1000
+        sb11.append("abc");
+        sb11.trimToSize();
+        System.out.println(sb11.capacity());//3
+
+
+
+
+
+
+
+
+
+
 
 
 
