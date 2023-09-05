@@ -14,6 +14,21 @@ public class Test {
         StringBuffer sb2 = new StringBuffer("Akash");
         System.out.println(sb2.capacity());//21
 
+        //Important methods of StringBuffer
+        System.out.println(sb2.charAt(3));//s
+        //System.out.println(sb2.charAt(30));//StringIndexOutOfBoundException
+        sb2.setCharAt(2,'b');
+        System.out.println(sb2);//Akbsh
+
+        //overloaded append
+        StringBuffer sb4 = new StringBuffer();
+        sb4.append("PI value is: ");
+        sb4.append(3.14);
+        sb4.append(" It is exactly: ");
+        sb4.append(true);
+        System.out.println(sb4);
+
+
 
     }
 

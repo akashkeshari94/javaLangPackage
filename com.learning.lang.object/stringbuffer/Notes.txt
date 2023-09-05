@@ -14,3 +14,18 @@ The main advantage of StringBuffer over String is that all required change will 
 
  StringBuffer sb1 = new StringBuffer(String s); //s.length+16
  Creates an equivalent StringBuffer with given String with capacity = s.length+16
+
+
+Important methods of StringBuffer
+public int length()
+public int capacity()
+public char charAt(int index)
+public void setCharAt(int index, char ch) //To replace the character located at specified index
+with provided character
+
+public StringBuffer append(String s)
+                          (int i)
+                          (long l)
+                          (char ch)
+                          (boolean b)
+similar overloaded methods available
