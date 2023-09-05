@@ -7,3 +7,10 @@ To handle this requirement , we should go for StringBuffer
 
 The main advantage of StringBuffer over String is that all required change will be performed in the existing
  object only.
+
+ Constructors
+ StringBuffer sb = new StringBuffer(); //initial capacity 16
+ StringBuffer sb1 = new StringBuffer(int initialCapacity);
+
+ StringBuffer sb1 = new StringBuffer(String s); //s.length+16
+ Creates an equivalent StringBuffer with given String with capacity = s.length+16
