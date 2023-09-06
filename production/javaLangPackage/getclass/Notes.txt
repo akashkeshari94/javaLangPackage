@@ -1,8 +1,0 @@
-We can use getClass method to get run time class definition of an object
-
-public final Class getClass()
-
-Bu using this Class class object, we can access class level properties like fully qualified name of the class,
-method information , constructor information etc
-
-To diplay databse vendor specific, Connection interface implemented class name
