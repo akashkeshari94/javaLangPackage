@@ -1,0 +1,10 @@
+If our class doesn't contain equals() method, Object class equals() method will be called
+
+== operator is meant for reference comparison, equals() method is meant for content comparison
+
+but default implementation of equals() method in Object class is reference comparisons only
+
+SO Student s1= new Student("Akash", 101);
+and Student s2= new Student("Akash", 101)
+
+s1.equals(s2) will give false even though content is same but reference is different --> only when we have not overridden equals method

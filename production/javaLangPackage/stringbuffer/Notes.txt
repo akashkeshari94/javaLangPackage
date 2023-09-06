@@ -1,0 +1,50 @@
+If the content is fixed and won't change frequently, then it is recommended to go for String
+
+If content is not fixed snd keep on changing , then it is not recommended to use String, Because for
+ every change , a new object will be recreated which affects the performance of the system
+
+To handle this requirement , we should go for StringBuffer
+
+The main advantage of StringBuffer over String is that all required change will be performed in the existing
+ object only.
+
+ Constructors
+ StringBuffer sb = new StringBuffer(); //initial capacity 16
+ StringBuffer sb1 = new StringBuffer(int initialCapacity);
+
+ StringBuffer sb1 = new StringBuffer(String s); //s.length+16
+ Creates an equivalent StringBuffer with given String with capacity = s.length+16
+
+
+Important methods of StringBuffer
+public int length()
+public int capacity()
+public char charAt(int index)
+public void setCharAt(int index, char ch) //To replace the character located at specified index
+with provided character
+
+public StringBuffer append(String s)
+                          (int i)
+                          (long l)
+                          (char ch)
+                          (boolean b)
+similar overloaded methods available for insert
+public StringBuffer insert(int index,"abc")
+
+
+public StringBuffer delete(int begin,int end)
+To delete characters located from begin index to end-1
+
+public StringBuffer deleteCharAt(int index)
+To delete characters located at specified index
+
+public StringBuffer reverse()
+
+public void setLength(int length)
+
+public void ensureCapacity(int capacity)
+to increase capacity on fly based on our requirement
+
+public int trimToSize()
+
+

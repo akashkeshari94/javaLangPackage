@@ -1,0 +1,32 @@
+String str = new String("Akash");--> in this case, two objects will created, one is heap are and another rin String Constant Pool,
+str will be pointing to heap object
+
+String str1="Akash" //In this case, only one obhject will be created in SCP and str1 will be always pointing that object
+
+
+Object Creation in SCP is optional, first it will check if there is nay objkect already present in SCP with required content
+If Object already present then existing object will be reused
+
+If object not already available,m then only a new object will be created. This rule is only application for SCP and not for heap
+
+
+garbage collector ius not allowed to access SCP area hence, even though object does not contain reference available, it is nit eligible for GC
+if it is present in SCP area.
+
+All SCP objects will be destroyed automatically at the time of JVM shutdown
+
+String str1= new String("Akash");two objects will be created one is heap area and another in SCP
+String str2= new String("Akash"); only one object will be created in heap and no object in SCP because already an object is available
+ with the same content
+String str3= "Akash"; //No objects will created
+String st4= "Akash"; //No objects will created
+
+So total 3 objects will be crated two in heap read and one in SCP
+
+Whenever we are using new operator, compulsory a new object will be crate din heap area. Hence there may be a chance of existing two objects with
+the same content in heap are but not in SCP, that is duplicate objects are posiible in heap are but not in SCP
+
+
+For every string Constant, one obhect will be placed in SCP area
+
+Because of some run time operation, if an object is required to create , that object will be placed onlky in yhe hep area but not in SCP are
